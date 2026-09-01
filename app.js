@@ -1,5 +1,5 @@
 /* =============================================
-   SAAT BAKİ — APP.JS
+   LUXSAAT NƏRİMANOV — APP.JS
    ============================================= */
 
 'use strict';
@@ -18,193 +18,193 @@ let filteredWatches = [];
 const watchesData = [
   {
     id: 'w1',
-    name: 'Hublot Big Bang Skelet',
-    brand: 'Hublot',
-    desc: 'Qara çərçivəli iskelet mexanizmi, titanium korpus. Xüsusi tourbillon indikatoru ilə.',
-    price: 4200,
-    weight: 'Ø 44mm',
-    img: 'images/watch_hublot_black.jpg',
+    name: 'Omega Seamaster Aqua Terra',
+    brand: 'Omega',
+    desc: 'Gümüşü qol bəndli, açıq ürək mexanizmli klassik Omega kişi saatı. İsveçrə dəqiqliyi.',
+    price: 4800,
+    weight: 'Ø 41mm',
+    img: 'images/watches-grid.jpg',
     badge: 'Populyar'
   },
   {
     id: 'w2',
-    name: 'Franck Muller Conquistador',
-    brand: 'Franck Muller',
-    desc: 'Kronometrik funksiyalı, gümüşü çərçivəli klassik erkək saatı. İsveçrə mexanikası.',
-    price: 3800,
-    weight: 'Ø 42mm',
-    img: 'images/watch_franck_muller.jpg',
-    badge: null
+    name: 'Rolex Submariner Date',
+    brand: 'Rolex',
+    desc: 'Qara diallı, polad qol bəndli ikonik Rolex dalğıc saatı. 300m suya davamlı.',
+    price: 14500,
+    weight: 'Ø 41mm',
+    img: 'images/watches-grid.jpg',
+    badge: 'Bestseller'
   },
   {
     id: 'w3',
-    name: 'Patek Philippe Nautilus Diamond',
+    name: 'Patek Philippe Nautilus',
     brand: 'Patek Philippe',
-    desc: 'Brilyant bəzəkli Nautilus modeli. İsveçrə premium saatçılığının zirvəsi.',
-    price: 18500,
+    desc: 'Mavi diallı, polad qol bəndli ikonik Nautilus kolleksiyası. İsveçrə premium saatçılığının zirvəsi.',
+    price: 16500,
     weight: 'Ø 40mm',
-    img: 'images/watch_patek_nautilus_iced.jpg',
+    img: 'images/watches-grid.jpg',
     badge: 'Lüks'
   },
   {
     id: 'w4',
-    name: 'Tag Heuer Aquaracer Pro',
+    name: 'Tag Heuer Carrera Chronograph',
     brand: 'Tag Heuer',
-    desc: 'Mavi diallı, paslanmaz polad qol saatı. 300m suya davamlı dalğıc saatı.',
-    price: 1850,
+    desc: 'Qara diallı, polad qol bəndli Carrera kronometrik saat. Racing ruhunda dizayn.',
+    price: 2200,
     weight: 'Ø 43mm',
-    img: 'images/watch_tag_heuer.jpg',
+    img: 'images/watches-grid.jpg',
     badge: null
   },
   {
     id: 'w5',
-    name: 'Rolex Datejust Rose Gold',
-    brand: 'Rolex',
-    desc: 'Qızıl rəngli paslanmaz polad qəlibli, gümüşü diallı Datejust modeli. Əbədi klassika.',
-    price: 12800,
-    weight: 'Ø 41mm',
-    img: 'images/watch_rolex_rose.jpg',
-    badge: 'Bestseller'
-  },
-  {
-    id: 'w6',
-    name: 'Panerai Radiomir Bronze',
-    brand: 'Panerai',
-    desc: 'Tünd diallı, bronz korpuslu Radiomir kolleksiyası. Denizçi ruhunda dizayn.',
-    price: 6400,
-    weight: 'Ø 45mm',
-    img: 'images/watch_panerai.jpg',
+    name: 'Hublot Big Bang Unico',
+    brand: 'Hublot',
+    desc: 'Siyah diallı, titanium korpuslu Big Bang Unico. Güclü kronometrik funksiya.',
+    price: 8900,
+    weight: 'Ø 44mm',
+    img: 'images/watches-grid.jpg',
     badge: null
   },
   {
+    id: 'w6',
+    name: 'Audemars Piguet Royal Oak',
+    brand: 'Audemars Piguet',
+    desc: 'Mavi diallı, polad qol bəndli Royal Oak. Lüks saatçılığın simvolu.',
+    price: 22000,
+    weight: 'Ø 41mm',
+    img: 'images/watches-grid.jpg',
+    badge: 'Lüks'
+  },
+  {
     id: 'w7',
-    name: 'Citizen Promaster Titanium',
-    brand: 'Citizen',
-    desc: 'Qara diallı, titanium korpuslu Eco-Drive texnologiyalı professional saat.',
-    price: 780,
-    weight: 'Ø 44mm',
-    img: 'images/watch_citizen_dark.jpg',
+    name: 'Casio G-Shock Mudmaster',
+    brand: 'Casio',
+    desc: 'Qara diallı, karbon qoruyucu korpuslu ultra davamlı G-Shock. Hər şəraitə uyğun.',
+    price: 620,
+    weight: 'Ø 53mm',
+    img: 'images/watches-grid.jpg',
     badge: null
   },
   {
     id: 'w8',
-    name: 'Patek Philippe Calatrava Tourbillon',
-    brand: 'Patek Philippe',
-    desc: 'Gümüşü diallı tourbillon mexanizmi. Nadir kolleksiya parçası, el işi bitirmə.',
-    price: 32000,
-    weight: 'Ø 39mm',
-    img: 'images/watch_patek_tourbillon.jpg',
-    badge: 'Nadir'
+    name: 'Franck Muller Vanguard',
+    brand: 'Franck Muller',
+    desc: 'Qara diallı, polad qol bəndli Vanguard kronometraji. İsveçrə dəqiqliyi.',
+    price: 9800,
+    weight: 'Ø 44mm',
+    img: 'images/watches-grid.jpg',
+    badge: null
   },
   {
     id: 'w9',
-    name: 'Patek Philippe Nautilus Green',
-    brand: 'Patek Philippe',
-    desc: 'Yaşıl teksturalı dial, paslanmaz polad qol bəndi. Moda ikonası.',
-    price: 16200,
-    weight: 'Ø 40mm',
-    img: 'images/watch_patek_nautilus_green.jpg',
+    name: 'Rolex Datejust 41',
+    brand: 'Rolex',
+    desc: 'Gümüşü diallı, polad qol bəndli Datejust. Əbədi klassika.',
+    price: 11800,
+    weight: 'Ø 41mm',
+    img: 'images/watches-grid.jpg',
     badge: null
   },
   {
     id: 'w10',
-    name: 'Tag Heuer Carrera GMT',
-    brand: 'Tag Heuer',
-    desc: 'Qara diallı kronometrik funksiyalı GMT saat. Professional pilot saatı.',
-    price: 2650,
+    name: 'Panerai Luminor Marina',
+    brand: 'Panerai',
+    desc: 'Qara diallı, polad korpuslu Luminor Marina. İtalyan dizaynı, İsveçrə mexanikası.',
+    price: 6800,
     weight: 'Ø 44mm',
-    img: 'images/watch_tag_heuer_carrera.jpg',
+    img: 'images/watches-grid.jpg',
     badge: null
   },
   {
     id: 'w11',
-    name: 'Cartier Santos Skelet',
-    brand: 'Cartier',
-    desc: 'Qızıl korpuslu, iskelet mexanizmi görünən Cartier Santos. Fransız elegantlığı.',
-    price: 8900,
-    weight: 'Ø 40mm',
-    img: 'images/watch_cartier_sq.jpg',
-    badge: null
+    name: 'Omega Speedmaster Professional',
+    brand: 'Omega',
+    desc: 'Qara diallı, polad qol bəndli Moonwatch. Tarixdə ilk Aya gedən saat.',
+    price: 5400,
+    weight: 'Ø 42mm',
+    img: 'images/watches-grid.jpg',
+    badge: 'İkonik'
   },
   {
     id: 'w12',
-    name: 'Kate Spade Holographic',
-    brand: 'Kate Spade',
-    desc: 'Holografik göy diallı, qara qol bəndli müasir kənar zərif qadın saatı.',
-    price: 420,
-    weight: 'Ø 36mm',
-    img: 'images/watch_kate_spade.jpg',
-    badge: null
+    name: 'Vacheron Constantin Overseas',
+    brand: 'Vacheron Constantin',
+    desc: 'Qara diallı, polad qol bəndli ultra-premium Overseas. Ən köklü saat markası.',
+    price: 24500,
+    weight: 'Ø 41mm',
+    img: 'images/watches-grid.jpg',
+    badge: 'Klassik'
   },
   {
     id: 'w13',
-    name: 'Cartier Ballon Bleu Tourbillon',
-    brand: 'Cartier',
-    desc: 'Sarı qızıl korpuslu tourbillon indikatoru ilə Ballon Bleu. Ultra lüks.',
-    price: 22000,
+    name: 'Hublot Classic Fusion Titanium',
+    brand: 'Hublot',
+    desc: 'Bej/qara diallı, titanium korpuslu Classic Fusion. Müasir lüks saatçılığın simvolu.',
+    price: 7200,
     weight: 'Ø 42mm',
-    img: 'images/watch_cartier_tourbillon.jpg',
-    badge: 'Lüks'
+    img: 'images/watches-grid.jpg',
+    badge: null
   },
   {
     id: 'w14',
-    name: 'Hublot Classic Fusion Skeleton',
-    brand: 'Hublot',
-    desc: 'Gümüşü iskelet mexanizmi, polad qol bəndi. Müasir lüks saatçılığın simvolu.',
-    price: 7800,
-    weight: 'Ø 42mm',
-    img: 'images/watch_hublot_skeleton.jpg',
+    name: 'Rolex GMT-Master II',
+    brand: 'Rolex',
+    desc: 'İki rəngli çərçivəli, qara diallı GMT-Master II. Pilot saatının klassiki.',
+    price: 15800,
+    weight: 'Ø 40mm',
+    img: 'images/watches-grid.jpg',
     badge: null
   },
   {
     id: 'w15',
-    name: 'Hublot Big Bang Unico Orange',
-    brand: 'Hublot',
-    desc: 'Parlaq narıncı ceramika korpus, qara dial. Güclü kronometrik funksiya.',
-    price: 9500,
-    weight: 'Ø 45mm',
-    img: 'images/watch_hublot_orange.jpg',
-    badge: 'Yeni'
+    name: 'Patek Philippe Calatrava',
+    brand: 'Patek Philippe',
+    desc: 'Ağ diallı, qızıl korpuslu Calatrava. Sadəlik içindəki mükəmməllik.',
+    price: 19500,
+    weight: 'Ø 39mm',
+    img: 'images/watches-grid.jpg',
+    badge: 'Nadir'
   },
   {
     id: 'w16',
-    name: 'Omega Seamaster Planet Ocean',
-    brand: 'Omega',
-    desc: 'Mavi-narıncı bəzəkli dalğıc saatı. 600m suya davamlı professional saat.',
-    price: 5200,
-    weight: 'Ø 43.5mm',
-    img: 'images/watch_omega_seamaster.jpg',
+    name: 'Tag Heuer Aquaracer Professional',
+    brand: 'Tag Heuer',
+    desc: 'Mavi diallı, polad qol bəndli Aquaracer. 300m suya davamlı dalğıc saatı.',
+    price: 1850,
+    weight: 'Ø 43mm',
+    img: 'images/watches-grid.jpg',
     badge: null
   },
   {
     id: 'w17',
-    name: 'Franck Muller Vanguard Iced',
-    brand: 'Franck Muller',
-    desc: 'Tam brilyant qaplı Vanguard kolleksiyası. Qızıl korpus, ağ dial.',
-    price: 28000,
-    weight: 'Ø 44mm',
-    img: 'images/watch_franck_muller_iced.jpg',
-    badge: 'VIP'
+    name: 'Richard Mille RM 011',
+    brand: 'Richard Mille',
+    desc: 'Karbon TPT korpuslu ultra yüngül titanium sport saat. Ən qabaqcıl mexanika.',
+    price: 48000,
+    weight: 'Ø 50mm',
+    img: 'images/watches-grid.jpg',
+    badge: 'Ultra Lüks'
   },
   {
     id: 'w18',
     name: 'Audemars Piguet Royal Oak Offshore',
     brand: 'Audemars Piguet',
-    desc: 'Boz diallı çoxbucaqlı çərçivəli Royal Oak Offshore. Saatçılıq sənəti.',
+    desc: 'Boz diallı, şahmat naxışlı Royal Oak Offshore. Ağır metal ruhunda dizayn.',
     price: 19800,
     weight: 'Ø 44mm',
-    img: 'images/watch_audemars.jpg',
+    img: 'images/watches-grid.jpg',
     badge: null
   },
   {
     id: 'w19',
-    name: 'Richard Mille RM 011',
-    brand: 'Richard Mille',
-    desc: 'Mavi planetar diallı ultra yüngül titanium korpuslu sport saat.',
-    price: 48000,
-    weight: 'Ø 50mm',
-    img: 'images/watch_richard_mille.jpg',
-    badge: 'Ultra Lüks'
+    name: 'Cartier Santos de Cartier',
+    brand: 'Cartier',
+    desc: 'Gümüşü diallı, polad qol bəndli Santos. Dünyanın ilk bilərzik saatı.',
+    price: 7800,
+    weight: 'Ø 39.8mm',
+    img: 'images/watches-grid.jpg',
+    badge: null
   },
   {
     id: 'w20',
@@ -213,48 +213,48 @@ const watchesData = [
     desc: 'Tam brilyant bəzəkli, iskelet mexanizm görünən Vanguard. Əsil cəvahirat saat.',
     price: 35000,
     weight: 'Ø 44mm',
-    img: 'images/watch_franck_muller_diamond.jpg',
+    img: 'images/watches-grid.jpg',
     badge: 'Nadir'
   },
   {
     id: 'w21',
-    name: 'Hublot Big Bang Steel',
-    brand: 'Hublot',
-    desc: 'Polad korpuslu qara diallı Big Bang. Klassik Hublot dəyəri.',
-    price: 6900,
-    weight: 'Ø 44mm',
-    img: 'images/watch_hublot_black2.jpg',
+    name: 'Omega De Ville Prestige',
+    brand: 'Omega',
+    desc: 'Gümüşü diallı, polad qol bəndli De Ville Prestige. Klassik elegantlıq.',
+    price: 3200,
+    weight: 'Ø 39.5mm',
+    img: 'images/watches-grid.jpg',
     badge: null
   },
   {
     id: 'w22',
-    name: 'Vacheron Constantin Overseas',
-    brand: 'Vacheron Constantin',
-    desc: 'Altın qol bəndli, qara diallı ultra-premium sport saat. Ən köklü saat markası.',
-    price: 24500,
-    weight: 'Ø 41mm',
-    img: 'images/watch_vacheron.jpg',
-    badge: 'Klassik'
-  },
-  {
-    id: 'w23',
     name: 'Versace V-Chrono',
     brand: 'Versace',
     desc: 'Qızıl Yunan motivi bəzəkli kronometrik Versace erkək saatı. İtalyan lüksü.',
     price: 1650,
     weight: 'Ø 44mm',
-    img: 'images/watch_versace.jpg',
+    img: 'images/watches-grid.jpg',
     badge: null
   },
   {
-    id: 'w24',
+    id: 'w23',
     name: 'Patek Philippe Grand Complications',
     brand: 'Patek Philippe',
     desc: 'Ağ diallı, tourbillon + ay fazası funksiyalı Grand Complication modeli.',
     price: 42000,
     weight: 'Ø 38mm',
-    img: 'images/watch_patek_white.jpg',
+    img: 'images/watches-grid.jpg',
     badge: 'Ultra Lüks'
+  },
+  {
+    id: 'w24',
+    name: 'Rolex Daytona Chronograph',
+    brand: 'Rolex',
+    desc: 'Qara diallı, polad qol bəndli ikonik Daytona. Yarış ruhunun simvolu.',
+    price: 18500,
+    weight: 'Ø 40mm',
+    img: 'images/watches-grid.jpg',
+    badge: 'VIP'
   }
 ];
 
@@ -447,7 +447,7 @@ function bumpCartCount() {
 function sendOrder() {
   if (cart.length === 0) return;
 
-  let msg = '⌚ *YENİ SİFARİŞ — Saat Baki*\n\n';
+  let msg = '⌚ *YENİ SİFARİŞ — Luxsaat Nərimanov*\n\n';
   msg += '━━━━━━━━━━━━━━━━━━━━\n';
   cart.forEach((item, idx) => {
     msg += `${idx + 1}. ${item.name} (${item.brand})\n   ${item.qty} × ${item.price.toLocaleString('az-AZ')} AZN = ${(item.qty * item.price).toLocaleString('az-AZ')} AZN\n`;
@@ -643,7 +643,7 @@ function closeVacancyModalBtn() {
 
 function applyVacancy() {
   if (!currentVacancy) return;
-  const msg = `👋 *Vakansiyaya Müraciət — Saat Baki*\n\n🔹 *Vəzifə:* ${currentVacancy.title}\n🔹 *İş rejimi:* ${currentVacancy.type}\n\nSalam! Bu vakansiya ilə maraqlanıram. Əlaqə saxlamaq istəyirəm.`;
+  const msg = `👋 *Vakansiyaya Müraciət — Luxsaat Nərimanov*\n\n🔹 *Vəzifə:* ${currentVacancy.title}\n🔹 *İş rejimi:* ${currentVacancy.type}\n\nSalam! Bu vakansiya ilə maraqlanıram. Əlaqə saxlamaq istəyirəm.`;
   window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer');
 }
 
