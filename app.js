@@ -1,5 +1,5 @@
 /* =============================================
-   LUXSAAT NƏRİMANOV — APP.JS
+   TIME STORE WOMEN — APP.JS
    ============================================= */
 
 'use strict';
@@ -18,243 +18,203 @@ let filteredWatches = [];
 const watchesData = [
   {
     id: 'w1',
-    name: 'Omega Seamaster Aqua Terra',
-    brand: 'Omega',
-    desc: 'Gümüşü qol bəndli, açıq ürək mexanizmli klassik Omega kişi saatı. İsveçrə dəqiqliyi.',
-    price: 4800,
-    weight: 'Ø 41mm',
+    name: 'Just Cavalli Qızılı Gül Qol Saatı',
+    brand: 'Just Cavalli',
+    desc: 'Qızılı gül rəngli korpuslu, daşlı bəzəkli Just Cavalli qadın saatı. Zərif dizayn, gündəlik elegantlıq.',
+    price: 320,
+    weight: 'Ø 36mm',
     img: 'images/watches-grid.jpg',
     badge: 'Populyar'
   },
   {
     id: 'w2',
-    name: 'Rolex Submariner Date',
-    brand: 'Rolex',
-    desc: 'Qara diallı, polad qol bəndli ikonik Rolex dalğıc saatı. 300m suya davamlı.',
-    price: 14500,
-    weight: 'Ø 41mm',
+    name: 'Michael Kors Ağ Qol Saatı',
+    brand: 'Michael Kors',
+    desc: 'Ağ dəri qayış, ağ korpuslu Michael Kors qadın saatı. Klassik və zərif görünüş.',
+    price: 280,
+    weight: 'Ø 34mm',
     img: 'images/watches-grid.jpg',
     badge: 'Bestseller'
   },
   {
     id: 'w3',
-    name: 'Patek Philippe Nautilus',
-    brand: 'Patek Philippe',
-    desc: 'Mavi diallı, polad qol bəndli ikonik Nautilus kolleksiyası. İsveçrə premium saatçılığının zirvəsi.',
-    price: 16500,
-    weight: 'Ø 40mm',
+    name: 'VMP Qızılı Daşlı Qol Saatı',
+    brand: 'VMP',
+    desc: 'Qızılı çərçivəli, daşlarla bəzədilmiş VMP qadın saatı. Premium görünüş, əyləncəli stil.',
+    price: 250,
+    weight: 'Ø 35mm',
     img: 'images/watches-grid.jpg',
-    badge: 'Lüks'
+    badge: 'Yeni'
   },
   {
     id: 'w4',
-    name: 'Tag Heuer Carrera Chronograph',
-    brand: 'Tag Heuer',
-    desc: 'Qara diallı, polad qol bəndli Carrera kronometrik saat. Racing ruhunda dizayn.',
-    price: 2200,
-    weight: 'Ø 43mm',
+    name: 'Casio Qadın Saatı',
+    brand: 'Casio',
+    desc: 'Klassik Casio dizaynı, etibarlı mexanizm. Gündəlik istifadə üçün ideal.',
+    price: 180,
+    weight: 'Ø 32mm',
     img: 'images/watches-grid.jpg',
     badge: null
   },
   {
     id: 'w5',
-    name: 'Hublot Big Bang Unico',
-    brand: 'Hublot',
-    desc: 'Siyah diallı, titanium korpuslu Big Bang Unico. Güclü kronometrik funksiya.',
-    price: 8900,
-    weight: 'Ø 44mm',
-    img: 'images/watches-grid.jpg',
-    badge: null
-  },
-  {
-    id: 'w6',
-    name: 'Audemars Piguet Royal Oak',
-    brand: 'Audemars Piguet',
-    desc: 'Mavi diallı, polad qol bəndli Royal Oak. Lüks saatçılığın simvolu.',
-    price: 22000,
-    weight: 'Ø 41mm',
+    name: 'Qızılı Zəncirli Bilərzik Saat',
+    brand: 'Just Cavalli',
+    desc: 'Qızılı zəncir qol bəndli, incə dizaynlı qadın saatı. Lüks görünüş.',
+    price: 340,
+    weight: 'Ø 28mm',
     img: 'images/watches-grid.jpg',
     badge: 'Lüks'
   },
   {
-    id: 'w7',
-    name: 'Casio G-Shock Mudmaster',
-    brand: 'Casio',
-    desc: 'Qara diallı, karbon qoruyucu korpuslu ultra davamlı G-Shock. Hər şəraitə uyğun.',
-    price: 620,
-    weight: 'Ø 53mm',
+    id: 'w6',
+    name: 'Michael Kors Qızılı Kronometr',
+    brand: 'Michael Kors',
+    desc: 'Qızılı polad qol bəndli, ağ diallı Michael Kors saat. Şəhər həyatı üçün mükəmməl.',
+    price: 350,
+    weight: 'Ø 38mm',
     img: 'images/watches-grid.jpg',
-    badge: null
+    badge: 'Populyar'
+  },
+  {
+    id: 'w7',
+    name: 'Rəngli Bilərzik Saat Dəsti',
+    brand: 'VMP',
+    desc: 'Rəngli daşlı bilərziklər ilə birlikdə incə qol saatı. Şənlik görünüş üçün ideal.',
+    price: 220,
+    weight: 'Ø 30mm',
+    img: 'images/watches-grid.jpg',
+    badge: 'Dəst'
   },
   {
     id: 'w8',
-    name: 'Franck Muller Vanguard',
-    brand: 'Franck Muller',
-    desc: 'Qara diallı, polad qol bəndli Vanguard kronometraji. İsveçrə dəqiqliyi.',
-    price: 9800,
-    weight: 'Ø 44mm',
+    name: 'Yaşıl Kvadrat Qadın Saatı',
+    brand: 'VMP',
+    desc: 'Yaşıl rəngli diallı, qızılı çərçivəli kvadrat qadın saatı. Unikal dizayn.',
+    price: 290,
+    weight: 'Ø 30×33mm',
     img: 'images/watches-grid.jpg',
-    badge: null
+    badge: 'Nadir'
   },
   {
     id: 'w9',
-    name: 'Rolex Datejust 41',
+    name: 'Rolex Qadın Lady-Datejust',
     brand: 'Rolex',
-    desc: 'Gümüşü diallı, polad qol bəndli Datejust. Əbədi klassika.',
-    price: 11800,
-    weight: 'Ø 41mm',
+    desc: 'Klassik Rolex Lady-Datejust qadın saatı. Əbədi elegantlıq, mükəmməl keyfiyyət.',
+    price: 8500,
+    weight: 'Ø 28mm',
     img: 'images/watches-grid.jpg',
-    badge: null
+    badge: 'VIP'
   },
   {
     id: 'w10',
-    name: 'Panerai Luminor Marina',
-    brand: 'Panerai',
-    desc: 'Qara diallı, polad korpuslu Luminor Marina. İtalyan dizaynı, İsveçrə mexanikası.',
-    price: 6800,
-    weight: 'Ø 44mm',
+    name: 'Daşlı Bəzəkli Gümüşü Saat',
+    brand: 'Just Cavalli',
+    desc: 'Gümüşü çərçivəli, brilyant daşları ilə bəzədilmiş qadın saatı. Xüsusi gecələr üçün.',
+    price: 380,
+    weight: 'Ø 34mm',
     img: 'images/watches-grid.jpg',
-    badge: null
+    badge: 'Xüsusi'
   },
   {
     id: 'w11',
-    name: 'Omega Speedmaster Professional',
-    brand: 'Omega',
-    desc: 'Qara diallı, polad qol bəndli Moonwatch. Tarixdə ilk Aya gedən saat.',
-    price: 5400,
-    weight: 'Ø 42mm',
+    name: 'Versace Medusa Qadın Saatı',
+    brand: 'Versace',
+    desc: 'Medusa simvolu bəzəkli, qızılı korpuslu Versace qadın saatı. İtalyan lüksü.',
+    price: 1200,
+    weight: 'Ø 36mm',
     img: 'images/watches-grid.jpg',
-    badge: 'İkonik'
+    badge: 'Lüks'
   },
   {
     id: 'w12',
-    name: 'Vacheron Constantin Overseas',
-    brand: 'Vacheron Constantin',
-    desc: 'Qara diallı, polad qol bəndli ultra-premium Overseas. Ən köklü saat markası.',
-    price: 24500,
-    weight: 'Ø 41mm',
+    name: 'Cartier Panthere Qadın Saatı',
+    brand: 'Cartier',
+    desc: 'Qızılı gül rəngli, incə zəncir qol bəndli Cartier Panthere. Fransız lüksünün simvolu.',
+    price: 5800,
+    weight: 'Ø 27×37mm',
     img: 'images/watches-grid.jpg',
-    badge: 'Klassik'
+    badge: 'Premium'
   },
   {
     id: 'w13',
-    name: 'Hublot Classic Fusion Titanium',
-    brand: 'Hublot',
-    desc: 'Bej/qara diallı, titanium korpuslu Classic Fusion. Müasir lüks saatçılığın simvolu.',
-    price: 7200,
-    weight: 'Ø 42mm',
+    name: 'Omega Constellation Qadın',
+    brand: 'Omega',
+    desc: 'Qızılı korpuslu, dərili qayışlı Omega Constellation. Klassik elegantlıq.',
+    price: 3200,
+    weight: 'Ø 29mm',
     img: 'images/watches-grid.jpg',
     badge: null
   },
   {
     id: 'w14',
-    name: 'Rolex GMT-Master II',
-    brand: 'Rolex',
-    desc: 'İki rəngli çərçivəli, qara diallı GMT-Master II. Pilot saatının klassiki.',
-    price: 15800,
-    weight: 'Ø 40mm',
-    img: 'images/watches-grid.jpg',
-    badge: null
-  },
-  {
-    id: 'w15',
-    name: 'Patek Philippe Calatrava',
-    brand: 'Patek Philippe',
-    desc: 'Ağ diallı, qızıl korpuslu Calatrava. Sadəlik içindəki mükəmməllik.',
-    price: 19500,
-    weight: 'Ø 39mm',
+    name: 'Franck Muller Vanguard Qadın',
+    brand: 'Franck Muller',
+    desc: 'Daşlı bəzəkli, rəngli diallı Franck Muller qadın saatı. Unikal İsveçrə incəliyi.',
+    price: 4500,
+    weight: 'Ø 32mm',
     img: 'images/watches-grid.jpg',
     badge: 'Nadir'
   },
   {
-    id: 'w16',
-    name: 'Tag Heuer Aquaracer Professional',
-    brand: 'Tag Heuer',
-    desc: 'Mavi diallı, polad qol bəndli Aquaracer. 300m suya davamlı dalğıc saatı.',
-    price: 1850,
-    weight: 'Ø 43mm',
-    img: 'images/watches-grid.jpg',
-    badge: null
-  },
-  {
-    id: 'w17',
-    name: 'Richard Mille RM 011',
-    brand: 'Richard Mille',
-    desc: 'Karbon TPT korpuslu ultra yüngül titanium sport saat. Ən qabaqcıl mexanika.',
-    price: 48000,
-    weight: 'Ø 50mm',
+    id: 'w15',
+    name: 'Patek Philippe Calatrava Qadın',
+    brand: 'Patek Philippe',
+    desc: 'Ağ diallı, qızılı korpuslu Patek Philippe qadın saatı. Saatçılığın ən yüksək zirvəsi.',
+    price: 14000,
+    weight: 'Ø 33mm',
     img: 'images/watches-grid.jpg',
     badge: 'Ultra Lüks'
   },
   {
-    id: 'w18',
-    name: 'Audemars Piguet Royal Oak Offshore',
-    brand: 'Audemars Piguet',
-    desc: 'Boz diallı, şahmat naxışlı Royal Oak Offshore. Ağır metal ruhunda dizayn.',
-    price: 19800,
-    weight: 'Ø 44mm',
+    id: 'w16',
+    name: 'Qızılı Apple Watch Qadın',
+    brand: 'VMP',
+    desc: 'Qızılı çərçivəli, zərif görünüşlü ağıllı saat. Müasir texnologiya, şık dizayn.',
+    price: 420,
+    weight: '41mm',
+    img: 'images/watches-grid.jpg',
+    badge: 'Smart'
+  },
+  {
+    id: 'w17',
+    name: 'Gümüşü Zəncirli Qadın Saatı',
+    brand: 'Michael Kors',
+    desc: 'Gümüşü zəncir qol bəndli, incə korpuslu Michael Kors qadın saatı. Gündəlik şıqlıq.',
+    price: 310,
+    weight: 'Ø 32mm',
     img: 'images/watches-grid.jpg',
     badge: null
   },
   {
+    id: 'w18',
+    name: 'Daşlı Sarmaşıq Saat Dəsti',
+    brand: 'Just Cavalli',
+    desc: 'Qızılı daşlı bilərzik saat dəsti. Tam komplekt görünüş üçün ideal.',
+    price: 260,
+    weight: 'Ø 28mm',
+    img: 'images/watches-grid.jpg',
+    badge: 'Dəst'
+  },
+  {
     id: 'w19',
-    name: 'Cartier Santos de Cartier',
-    brand: 'Cartier',
-    desc: 'Gümüşü diallı, polad qol bəndli Santos. Dünyanın ilk bilərzik saatı.',
-    price: 7800,
-    weight: 'Ø 39.8mm',
+    name: 'VMP Qızılı Böyük Korpuslu Saat',
+    brand: 'VMP',
+    desc: 'Qızılı rəngli geniş korpuslu, iri diallı qadın saatı. Bold stil, güclü görünüş.',
+    price: 270,
+    weight: 'Ø 40mm',
     img: 'images/watches-grid.jpg',
     badge: null
   },
   {
     id: 'w20',
-    name: 'Franck Muller Vanguard Diamond',
-    brand: 'Franck Muller',
-    desc: 'Tam brilyant bəzəkli, iskelet mexanizm görünən Vanguard. Əsil cəvahirat saat.',
-    price: 35000,
-    weight: 'Ø 44mm',
+    name: 'Just Cavalli Qızılı Tam Daşlı',
+    brand: 'Just Cavalli',
+    desc: 'Tam brilyant bəzəkli, qızılı qol bəndli Just Cavalli lüks qadın saatı.',
+    price: 450,
+    weight: 'Ø 34mm',
     img: 'images/watches-grid.jpg',
-    badge: 'Nadir'
-  },
-  {
-    id: 'w21',
-    name: 'Omega De Ville Prestige',
-    brand: 'Omega',
-    desc: 'Gümüşü diallı, polad qol bəndli De Ville Prestige. Klassik elegantlıq.',
-    price: 3200,
-    weight: 'Ø 39.5mm',
-    img: 'images/watches-grid.jpg',
-    badge: null
-  },
-  {
-    id: 'w22',
-    name: 'Versace V-Chrono',
-    brand: 'Versace',
-    desc: 'Qızıl Yunan motivi bəzəkli kronometrik Versace erkək saatı. İtalyan lüksü.',
-    price: 1650,
-    weight: 'Ø 44mm',
-    img: 'images/watches-grid.jpg',
-    badge: null
-  },
-  {
-    id: 'w23',
-    name: 'Patek Philippe Grand Complications',
-    brand: 'Patek Philippe',
-    desc: 'Ağ diallı, tourbillon + ay fazası funksiyalı Grand Complication modeli.',
-    price: 42000,
-    weight: 'Ø 38mm',
-    img: 'images/watches-grid.jpg',
-    badge: 'Ultra Lüks'
-  },
-  {
-    id: 'w24',
-    name: 'Rolex Daytona Chronograph',
-    brand: 'Rolex',
-    desc: 'Qara diallı, polad qol bəndli ikonik Daytona. Yarış ruhunun simvolu.',
-    price: 18500,
-    weight: 'Ø 40mm',
-    img: 'images/watches-grid.jpg',
-    badge: 'VIP'
+    badge: 'Premium'
   }
 ];
 
@@ -266,8 +226,8 @@ const vacanciesData = [
     type: 'Tam Ştat',
     salary: '800 – 1400 AZN + Komissiya',
     schedule: 'Dəyişən növbə (5/2)',
-    requirements: 'Lüks məhsullar üzrə bilik, yaxşı ünsiyyət bacarığı, satış təcrübəsi',
-    desc: 'Müştərilərə lüks saat brendlərini tanıtmaq, satış prosesini idarə etmək.',
+    requirements: 'Qadın aksessuarları üzrə bilik, yaxşı ünsiyyət bacarığı, satış təcrübəsi',
+    desc: 'Müştərilərə qadın saat brendlərini tanıtmaq, satış prosesini idarə etmək.',
     duties: 'Müştəri qəbulu, məhsul izahı, sifariş işlənməsi, müştəri məmnuniyyəti'
   },
   {
@@ -447,7 +407,7 @@ function bumpCartCount() {
 function sendOrder() {
   if (cart.length === 0) return;
 
-  let msg = '⌚ *YENİ SİFARİŞ — Luxsaat Nərimanov*\n\n';
+  let msg = '⌚ *YENİ SİFARİŞ — Time Store Women*\n\n';
   msg += '━━━━━━━━━━━━━━━━━━━━\n';
   cart.forEach((item, idx) => {
     msg += `${idx + 1}. ${item.name} (${item.brand})\n   ${item.qty} × ${item.price.toLocaleString('az-AZ')} AZN = ${(item.qty * item.price).toLocaleString('az-AZ')} AZN\n`;
@@ -643,7 +603,7 @@ function closeVacancyModalBtn() {
 
 function applyVacancy() {
   if (!currentVacancy) return;
-  const msg = `👋 *Vakansiyaya Müraciət — Luxsaat Nərimanov*\n\n🔹 *Vəzifə:* ${currentVacancy.title}\n🔹 *İş rejimi:* ${currentVacancy.type}\n\nSalam! Bu vakansiya ilə maraqlanıram. Əlaqə saxlamaq istəyirəm.`;
+  const msg = `👋 *Vakansiyaya Müraciət — Time Store Women*\n\n🔹 *Vəzifə:* ${currentVacancy.title}\n🔹 *İş rejimi:* ${currentVacancy.type}\n\nSalam! Bu vakansiya ilə maraqlanıram. Əlaqə saxlamaq istəyirəm.`;
   window.open(`https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer');
 }
 
